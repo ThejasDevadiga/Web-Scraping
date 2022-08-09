@@ -92,7 +92,7 @@ def collect_Data(item):
     print("Length of product prices"+len(prices))
     print("Length of product rating list"+len(ratings))
     df = pd.DataFrame({'brand':brands,'Product Name':products,'specifications':specifications,'Price':prices,'Rating':ratings}) 
-    df.to_csv(f'../COLLECTED_DATA/{item}.csv', index=False, encoding='utf-8')
+    df.to_csv(f'./{item}.csv', index=False, encoding='utf-8')
 
 
 
